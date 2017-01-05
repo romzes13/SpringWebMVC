@@ -8,6 +8,12 @@
 	<title>
 			List Customers
 	</title>
+	
+	<!-- reference our style sheet -->
+	
+	<link type="text/css"
+		  rel="stylesheet"
+		  href="${pageContext.request.contextPath}/resources/css/style.css" />
 
 </head>
 
@@ -22,6 +28,14 @@
 	
 	<div id="container">
 		<div id="content">
+		
+		<!-- Add new Button -->
+		
+		<input type="button" value="Add Customer"
+				onclick="window.location.href='showFormForAdd'; return false;"
+				class="add-button"
+		/>
+		
 		
 		<!-- Add our html table -->
 		
